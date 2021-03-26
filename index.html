@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <title>Search for a Location based on an Address</title>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <link rel="stylesheet" type="text/css" href="https://js-examples.developer.here.com/pr/geocode-a-location-from-structured-address/demo.css" />
+    <link rel="stylesheet" type="text/css" href="https://js-examples.developer.here.com/pr/geocode-a-location-from-structured-address/styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://developer.here.com/sites/g/files/odxslz211/files/style.css" />
+    <script type="text/javascript" src='https://js-examples.developer.here.com/pr/test-credentials.js'></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+  </head>
+
+  <body id="geocode">
+    <div class="page-header">
+      <h1>Search for a Location based on an Address</h1>
+      <p>Request a location using a free-form text input and display it on the map.</p>
+    </div>
+    <p>This example makes a geocoding request and retrieves the latitude, longitude and
+      complete address details of <b>200 S Mathilda Ave, Sunnyvale, CA</b> based on a free-form
+      text input. A clickable marker is placed on the location found.</p>
+    <div id="map"></div>
+    <div class="container">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h2 class="panel-title">Enter Address Here:</h2>
+        </div>
+        <div class="panel-body">
+          <input id="addressInput" placeholder="eg. 200 S Mathilda Ave, Sunnyvale, CA" type="text" class="form-control">
+          <input type="button" value="Go" onclick="geocode(getPlatform(), document.getElementById('addressInput').value)">
+        </div>
+      </div>
+    </div>
+    <div id="panel"></div>
+    <script type="text/javascript" src='demo.js'></script>
+  </body>
+
+</html>
