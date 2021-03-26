@@ -1,3 +1,4 @@
+ var apikey = 'TkVN62s05YmllZ2SRg0-TOFzREzuUDF9a0_-rt-7a44';
 /**
  * Calculates and displays the address details based on a free-form text
  *
