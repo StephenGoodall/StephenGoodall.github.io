@@ -7,6 +7,7 @@
  * see: http://developer.here.com/rest-apis/documentation/geocoder/topics/resource-geocode.html
  *
  * @param   {H.service.Platform} platform    A stub class to access HERE services
+ * @param   {String} query    A query to use when calling the HERE API
  */
 function geocode(platform, query) {
   
