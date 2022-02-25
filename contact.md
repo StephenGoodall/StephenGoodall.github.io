@@ -23,7 +23,7 @@ permalink: /contact-us/
           </div>
           <hr>
           <div class="form-group mt-3">
-            <label class="mr-2">Upload your CV:</label>
+            <label class="mr-2">Upload your File:</label>
             <input type="file" name="file">
           </div>
           <hr>
